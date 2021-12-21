@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Overpass:wght@900&family=Raleway:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li>a{
+    color: white;
+    text-decoration: none;
+}
+
+#navbar{
+    display: flex;
+    padding: 0% 10%;
+    background-color: #0b1124;
+    color: white;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+#nav-right, #nav-left{
+    width: 50%;
+}
+
+#nav-left > ul, #nav-right > ul{
+    padding: 1vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-right > ul{
+    /* panjang 50% dari element parentny */
+    width: 50%;
+    /* biar ke kanan jd tulis margin-left, sisi elemen kiri dikasih space jd ke kanan */
+    margin-left: auto;
+    /* utk center vertikal */
+    padding: 2vh
+}
+#nav-left > ul{
+    align-items: center;
+    padding: 1vh;
+}
+
+/* ini utk membuat button pricing */
+.btn-outline{
+    border: 2px solid #EC074D;
+    padding: 5px 25px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-outline:hover{
+    background-color: #EC074D;
+}
+
+#section-1{
+    background: rgb(17,35,76);
+    background: linear-gradient(0deg, rgba(17,35,76,1) 0%, rgba(11,17,37,1) 100%);
+    color: white;
+    text-align: center;
+    height: 80vh;
+}
+
+.header1{
+    font-family: 'Overpass', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.header2{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-getstarted{
+    background-color:#EC074D;
+    border: 2px solid #EC074D;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+iframe{
+    display: block;
+    margin: 5vh auto;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#section-space{
+    background-color: white;
+    height: 50vh;
+}
+
+#section-2{
+    background-image: url("https://www.jwplayer.com/hubfs/background-light.jpg");
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#card-testi{
+    width: 310px;
+    height: 410px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    font-family: 'Overpass', sans-serif;
+}
+
+.btn-learnmore{
+    border: 2px solid #EC074D;
+    color: #EC074D;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+#card-album{
+    width: 25vw;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 2vh;
+}
+
+#card-content{
+    text-align: justify;
+    padding: 5%
+}
+
+#card-btn{
+    margin-top: 5%;
+}
+
+#card-btn > a{
+    border: 1px solid gray;
+    padding: 2%;
+}
+
+#floating-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #FE0146;
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.border{
+    border-right: 1px solid white;
+    padding-right: 5px;
+}
